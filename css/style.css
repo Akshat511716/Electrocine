@@ -1,0 +1,81 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Airbnb;
+  src: url('../font/AirbnbCerealMedium.ttf') format('truetype');
+}
+/*===== VARIABLES CSS =====*/
+:root{
+  /*===== Colors =====*/
+  --primary-color: #1b237c;
+  --secondary-color: #090433;
+  --white-color: #F7F6FB;
+  --accent-color: #f0a500;
+  --body-font: 'Nunito', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+
+}
+
+body{
+  font-family: 'Nunito', sans-serif;  
+  overflow-x: hidden;
+}
+a{
+  cursor: pointer;
+}
+
+.landing-page{
+  font-family: Airbnb;
+  display: grid;
+  place-items: center;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15% 5%;
+  height: auto;
+  background-attachment: fixed;
+  background-image: url('../assets/img/la-coccinelle-AtKCvMQtjBU-unsplash.png');
+  background-position: right;
+  background-size: cover;
+}
+.name{
+  font-size: 2em;
+  font-weight: 600;
+}
+.time{
+  font-weight: bolder;
+  padding: 5%;
+}
+.about-heading{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.map-responsive{
+
+  overflow:hidden;
+
+  padding-bottom:56.25%;
+
+  position:relative;
+
+  height:0;
+
+}
+
+.map-responsive iframe{
+
+  left:0;
+
+  top:0;
+
+  height:100%;
+
+  width:100%;
+
+  position:absolute;
+
+}
