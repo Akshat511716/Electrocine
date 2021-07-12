@@ -1,13 +1,15 @@
 /*===== GOOGLE FONTS =====*/
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
 @font-face {
   font-family: Airbnb;
   src: url('../font/AirbnbCerealMedium.ttf') format('truetype');
 }
+
 /*===== VARIABLES CSS =====*/
-:root{
+
+:root {
   /*===== Colors =====*/
   --primary-color: #1b237c;
   --secondary-color: #090433;
@@ -15,67 +17,84 @@
   --accent-color: #f0a500;
   --body-font: 'Nunito', sans-serif;
 }
-html{
-  scroll-behavior: smooth;
 
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-  font-family: 'Nunito', sans-serif;  
+body {
+  font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
 }
-a{
+
+a {
   cursor: pointer;
+  color: #25274D;
 }
 
-.landing-page{
+.landing-page {
   font-family: Airbnb;
   display: grid;
   place-items: center;
   font-size: 1.5em;
   text-align: center;
-  padding: 15% 5%;
+  padding: 12% 5%;
   height: auto;
   background-attachment: fixed;
-  background-image: url('../assets/img/la-coccinelle-AtKCvMQtjBU-unsplash.png');
+  background-image: url('../Group 4.png');
+  /* background-image: url('../assets/img/la-coccinelle-AtKCvMQtjBU-unsplash.png'); */
   background-position: right;
   background-size: cover;
 }
-.name{
-  font-size: 2em;
+
+.name {
+  font-size: 3em;
   font-weight: 600;
 }
-.time{
+
+.description {
+  font-size: 1.5em;
+}
+
+.time {
   font-weight: bolder;
   padding: 5%;
 }
-.about-heading{
+
+@media screen and (max-width:768px) {
+  .name {
+    font-size: 1.75em;
+    font-weight: 600;
+  }
+  .description {
+    font-size: 1.25em;
+  }
+  .time {
+    font-weight: bolder;
+    padding: 5%;
+  }
+}
+
+.about-heading {
   font-size: 3em;
   font-weight: 700;
 }
 
-.map-responsive{
-
-  overflow:hidden;
-
-  padding-bottom:56.25%;
-
-  position:relative;
-
-  height:0;
-
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.map-responsive iframe{
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
 
-  left:0;
-
-  top:0;
-
-  height:100%;
-
-  width:100%;
-
-  position:absolute;
-
+#gallery {
+  z-index: 1;
 }
