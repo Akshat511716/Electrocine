@@ -1,1 +1,1 @@
-# Electrocine
+# Electrocine Industries
